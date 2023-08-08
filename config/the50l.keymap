@@ -155,7 +155,7 @@
             bindings = <
 &trans  &trans  &trans      &kp KP_PLUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans            &trans  &trans
 &trans  &trans  &trans     &kp KP_MINUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                    &trans
-&trans  &trans  &trans  &kp KP_MULTIPLY                &M1     &M2     &M3  &trans  &trans  &trans    &kp QUESTION    &kp LESS_THAN  &kp GREATER_THAN  &trans
+&trans  &trans  &trans  &kp KP_MULTIPLY                &M0     &M1     &M2     &M3  &trans  &trans    &kp QUESTION    &kp LESS_THAN  &kp GREATER_THAN  &trans
 &trans  &trans  &trans        &kp SLASH  &kp EQUAL  &trans          &trans                  &trans                           &trans            &trans  &trans
             >;
         };
