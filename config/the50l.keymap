@@ -58,11 +58,11 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <22>;
         };
-        glt2: glt2 {
+        g2: g2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLT2";
+            label = "G2";
             bindings =
-                <&lt>,
+                <&mo>,
                 <&kp>;
 
             #binding-cells = <2>;
@@ -119,10 +119,10 @@
             // ---------------------------------------------------------------------------------------------
 
             bindings = <
-&kp N7   &kp N8     &kp N9  &lt 2 ESCAPE       &kp Q     &kp W  &kp E         &kp R      &kp T  &kp Y              &kp U           &kp I          &kp O          &kp P       &kp BSPC
-&kp N4   &kp N5     &kp N6  &kp LEFT_GUI       &kp A     &kp S  &kp D  &fs LSHIFT F  &glt2 2 G  &kp H       &js RSHIFT J           &kp K          &kp L                       &kp RET
-&kp N1   &kp N2     &kp N3     &kp LSHFT                 &kp Z  &kp X         &kp C      &kp V  &kp B  &nalt RIGHT_ALT N  &mctrl RCTRL M        &kp DEL     &kp RSHIFT  &kp RC(SPACE)
-&kp N0  &kp DOT  &kp ENTER     &kp LCTRL  &kp ESCAPE  &kp LGUI          &lt 1 SPACE                      &lt 3 BACKSPACE                  &kp RIGHT_ALT  &kp RIGHT_GUI      &kp RCTRL
+&kp N7   &kp N8     &kp N9  &lt 2 ESCAPE       &kp Q     &kp W  &kp E         &kp R    &kp T  &kp Y              &kp U           &kp I          &kp O          &kp P       &kp BSPC
+&kp N4   &kp N5     &kp N6  &kp LEFT_GUI       &kp A     &kp S  &kp D  &fs LSHIFT F  &g2 2 G  &kp H       &js RSHIFT J           &kp K          &kp L                       &kp RET
+&kp N1   &kp N2     &kp N3     &kp LSHFT                 &kp Z  &kp X         &kp C    &kp V  &kp B  &nalt RIGHT_ALT N  &mctrl RCTRL M        &kp DEL     &kp RSHIFT  &kp RC(SPACE)
+&kp N0  &kp DOT  &kp ENTER     &kp LCTRL  &kp ESCAPE  &kp LGUI          &lt 1 SPACE                    &lt 3 BACKSPACE                  &kp RIGHT_ALT  &kp RIGHT_GUI      &kp RCTRL
             >;
         };
 
@@ -144,7 +144,7 @@
 
         layer_2 {
             bindings = <
-    &trans      &trans       &trans   &none  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND          &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &none
+    &trans      &trans       &trans  &trans  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND          &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &none
     &trans      &trans       &trans  &trans           &kp F1  &kp F2    &kp F3      &kp F4       &kp F5     &kp F6          &none  &kp LEFT_BRACKET     &kp RIGHT_BRACKET                         &kp DELETE
     &trans      &trans       &trans  &trans                   &kp F7    &kp F8      &kp F9      &kp F10    &kp F11        &kp F12        &kp C_MUTE              &kp APOS      &kp DOUBLE_QUOTES      &trans
 &bt BT_CLR  &sys_reset  &bootloader  &trans           &trans  &trans                &trans                                 &trans                               &kp GRAVE              &kp TILDE       &none
