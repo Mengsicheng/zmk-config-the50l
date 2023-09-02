@@ -159,14 +159,5 @@
 &trans  &trans  &trans     &kp SLASH  &kp EQUAL     &trans          &tog 0                  &trans                           &trans            &trans  &trans
             >;
         };
-
-        layer_4 {
-            bindings = <
- &none   &none   &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans                  &trans          &trans  &trans  &trans
-            >;
-        };
     };
 };
