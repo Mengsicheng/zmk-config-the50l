@@ -106,10 +106,10 @@
             // ---------------------------------------------------------------------------------------------
 
             bindings = <
-&kp N7  &kp N8   &kp N9     &lt 2 ESCAPE  &kp Q       &kp W     &kp E  &kp R         &kp T    &kp Y  &kp U              &kp I           &kp O          &kp P          &kp BSPC
-&kp N4  &kp N5   &kp N6     &kp LEFT_GUI  &kp A       &kp S     &kp D  &fs LSHIFT F  &g2 2 G  &kp H  &js RSHIFT J       &kp K           &kp L                         &kp RET
-&kp N1  &kp N2   &kp N3     &kp LSHFT                 &kp Z     &kp X  &kp C         &kp V    &kp B  &nalt RIGHT_ALT N  &mctrl RCTRL M  &kp DEL        &kp RSHIFT     &kp RC(SPACE)
-&kp N0  &kp DOT  &kp ENTER  &kp LCTRL     &kp ESCAPE  &kp LGUI         &lt 1 SPACE                   &lt 3 BACKSPACE                    &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
+&kp N7  &kp N8   &kp N9     &lt 2 ESCAPE  &kp Q       &kp W         &kp E  &kp R         &kp T    &kp Y  &kp U              &kp I           &kp O          &kp P          &kp BSPC
+&kp N4  &kp N5   &kp N6     &kp LEFT_GUI  &kp A       &kp S         &kp D  &fs LSHIFT F  &g2 2 G  &kp H  &js RSHIFT J       &kp K           &kp L                         &kp RET
+&kp N1  &kp N2   &kp N3     &kp LSHFT                 &kp Z         &kp X  &kp C         &kp V    &kp B  &nalt RIGHT_ALT N  &mctrl RCTRL M  &kp DEL        &kp RSHIFT     &kp RC(SPACE)
+&kp N0  &kp DOT  &kp ENTER  &kp LCTRL     &kp ESCAPE  &mt LGUI ESC         &lt 1 SPACE                   &lt 3 BACKSPACE                    &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
             >;
         };
 
@@ -122,10 +122,10 @@
             // ---------------------------------------------------------------------------------------------
 
             bindings = <
-&kp F7  &kp F8  &kp F9  &none    &kp N1     &kp N2           &kp N3  &kp N4     &kp N5     &kp N6    &kp N7         &kp N8    &kp N9     &kp N0      &kp BACKSPACE
-&kp F4  &kp F5  &kp F6  &kp TAB  &kp LC(A)  &kp C_VOLUME_UP  &trans  &trans     &trans     &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT              &kp SLASH
-&kp F1  &kp F2  &kp F3  &trans              &trans           &trans  &kp LC(C)  &kp LC(V)  &trans    &kp RS(SEMI)   &kp SEMI  &kp COMMA  &kp PERIOD  &trans
-&trans  &trans  &trans  &trans   &none      &trans                   &trans                          &kp BACKSLASH            &kp PIPE   &none       &none
+&kp F7  &kp F8  &kp F9  &none    &kp N1           &kp N2             &kp N3  &kp N4  &kp N5  &kp N6    &kp N7         &kp N8    &kp N9     &kp N0      &kp BACKSPACE
+&kp F4  &kp F5  &kp F6  &kp TAB  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT              &kp SLASH
+&kp F1  &kp F2  &kp F3  &trans                    &trans             &trans  &trans  &trans  &trans    &kp RS(SEMI)   &kp SEMI  &kp COMMA  &kp PERIOD  &trans
+&trans  &trans  &trans  &trans   &none            &trans                     &trans                    &kp BACKSLASH            &kp PIPE   &none       &none
             >;
         };
 
@@ -140,10 +140,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &kp PLUS      &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans          &kp C_VOL_UP     &kp C_VOLUME_DOWN  &trans
-&trans  &trans  &trans  &kp MINUS     &kp MINUS  &kp UNDER  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                     &trans
-&trans  &trans  &trans  &kp ASTERISK             &M0        &M1     &M2     &M3     &trans  &trans  &kp QUESTION    &kp LESS_THAN    &kp GREATER_THAN   &trans
-&trans  &trans  &trans  &kp SLASH     &kp EQUAL  &trans             &tog 0                  &trans                  &trans           &trans             &trans
+&trans  &trans  &trans  &kp PLUS      &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans            &trans
+&trans  &trans  &trans  &kp MINUS     &kp MINUS  &kp UNDER  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                    &trans
+&trans  &trans  &trans  &kp ASTERISK             &M0        &M1     &M2     &M3     &trans  &trans  &kp QUESTION    &kp LESS_THAN    &kp GREATER_THAN  &trans
+&trans  &trans  &trans  &kp SLASH     &kp EQUAL  &trans             &tog 0                  &trans                  &trans           &trans            &trans
             >;
         };
     };
