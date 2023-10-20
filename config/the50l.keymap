@@ -14,10 +14,7 @@
             compatible = "zmk,behavior-macro";
             label = "M4";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL &kp SPACE>,
-                <&macro_release>;
+            bindings = <&macro_press>, <&kp RCTRL &kp SPACE>, <&macro_release>;
         };
         M0: M0 {
             compatible = "zmk,behavior-macro";
@@ -49,9 +46,7 @@
         fs: fs {
             compatible = "zmk,behavior-hold-tap";
             label = "FS";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -61,9 +56,7 @@
         g2: g2 {
             compatible = "zmk,behavior-hold-tap";
             label = "G2";
-            bindings =
-                <&mo>,
-                <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -73,9 +66,7 @@
         js: js {
             compatible = "zmk,behavior-hold-tap";
             label = "JS";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -85,9 +76,7 @@
         nalt: nalt {
             compatible = "zmk,behavior-hold-tap";
             label = "NALT";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <38>;
@@ -97,9 +86,7 @@
         mctrl: mctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "MCTRL";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <39>;
@@ -135,10 +122,10 @@
             // ---------------------------------------------------------------------------------------------
 
             bindings = <
-&kp F7  &kp F8  &kp F9  &none    &kp N1             &kp N2           &kp N3  &kp N4  &kp N5  &kp N6    &kp N7         &kp N8    &kp N9     &kp N0      &kp BACKSPACE
-&kp F4  &kp F5  &kp F6  &kp TAB  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT              &kp SLASH
-&kp F1  &kp F2  &kp F3  &trans                      &trans           &trans  &trans  &trans  &trans    &kp RS(SEMI)   &kp SEMI  &kp COMMA  &kp PERIOD  &trans
-&trans  &trans  &trans  &trans   &none              &trans                   &trans                    &kp BACKSLASH            &kp PIPE   &none       &none
+&kp F7  &kp F8  &kp F9  &none    &kp N1     &kp N2           &kp N3  &kp N4     &kp N5     &kp N6    &kp N7         &kp N8    &kp N9     &kp N0      &kp BACKSPACE
+&kp F4  &kp F5  &kp F6  &kp TAB  &kp LC(A)  &kp C_VOLUME_UP  &trans  &trans     &trans     &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT              &kp SLASH
+&kp F1  &kp F2  &kp F3  &trans              &trans           &trans  &kp LC(C)  &kp LC(V)  &trans    &kp RS(SEMI)   &kp SEMI  &kp COMMA  &kp PERIOD  &trans
+&trans  &trans  &trans  &trans   &none      &trans                   &trans                          &kp BACKSLASH            &kp PIPE   &none       &none
             >;
         };
 
@@ -153,10 +140,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &kp PLUS      &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans          &trans           &trans            &trans
-&trans  &trans  &trans  &kp MINUS     &kp MINUS  &kp UNDER  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                    &trans
-&trans  &trans  &trans  &kp ASTERISK             &M0        &M1     &M2     &M3     &trans  &trans  &kp QUESTION    &kp LESS_THAN    &kp GREATER_THAN  &trans
-&trans  &trans  &trans  &kp SLASH     &kp EQUAL  &trans             &tog 0                  &trans                  &trans           &trans            &trans
+&trans  &trans  &trans  &kp PLUS      &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans          &kp C_VOL_UP     &kp C_VOLUME_DOWN  &trans
+&trans  &trans  &trans  &kp MINUS     &kp MINUS  &kp UNDER  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                     &trans
+&trans  &trans  &trans  &kp ASTERISK             &M0        &M1     &M2     &M3     &trans  &trans  &kp QUESTION    &kp LESS_THAN    &kp GREATER_THAN   &trans
+&trans  &trans  &trans  &kp SLASH     &kp EQUAL  &trans             &tog 0                  &trans                  &trans           &trans             &trans
             >;
         };
     };
